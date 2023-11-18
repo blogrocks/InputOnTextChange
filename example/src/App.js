@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from "react";
 
-import { ExampleComponent } from 'react-input-for-chinese'
+import { InputOnTextChange } from 'react-input-for-chinese'
 import 'react-input-for-chinese/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const [text, setText] = useState('');
+
+  const handleChange = (v) => setText(v);
+  return (
+    <>
+      <InputOnTextChange value={text} onChange={handleChange} />
+      {text}
+    </>
+  )
 }
 
 export default App
