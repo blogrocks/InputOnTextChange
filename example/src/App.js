@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { InputOnTextChange } from 'react-input-for-chinese'
+import InputOnTextChange from 'react-input-for-chinese'
 import 'react-input-for-chinese/dist/index.css'
 
 const App = () => {

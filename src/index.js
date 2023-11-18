@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 
-export const InputOnTextChange = ({
+const InputOnTextChange = ({
   onChange: onChangeProp = () => {},
   value: valueProp,
   ...restProps
@@ -37,3 +37,4 @@ export const InputOnTextChange = ({
     />
   )
 }
+export default InputOnTextChange
