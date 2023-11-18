@@ -13,16 +13,24 @@ npm install --save react-input-for-chinese
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { useState } from "react";
 
-import MyComponent from 'react-input-for-chinese'
+import { InputOnTextChange } from 'react-input-for-chinese'
 import 'react-input-for-chinese/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  const [text, setText] = useState('');
+
+  const handleChange = (v) => setText(v);
+  return (
+    <>
+      <InputOnTextChange value={text} onChange={handleChange} />
+      {text}
+    </>
+  )
 }
+
+export default App
 ```
 
 ## License
