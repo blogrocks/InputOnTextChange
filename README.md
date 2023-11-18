@@ -35,7 +35,7 @@ const App = () => {
 export default App
 
 ```
-![gif.gif](..%2F..%2FDesktop%2Fgif.gif)
+![gif.gif](https://github.com/blogrocks/InputOnTextChange/raw/main/gif.gif)
 ## License
 
 MIT © [](https://github.com/)
